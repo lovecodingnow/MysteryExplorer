@@ -59,7 +59,7 @@ export default defineConfig({
       }),
       GitChangelog({ 
         // 填写在此处填写您的仓库链接
-        repoURL: () => 'https://github.com/nolebase/integrations', 
+        repoURL: () => 'https://gitee.com/lovecodingnow/MysteryExplorer', 
       }), 
       GitChangelogMarkdownSection(), 
     ]
