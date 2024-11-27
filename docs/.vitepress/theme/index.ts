@@ -12,11 +12,15 @@ import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import { useData, useRoute } from 'vitepress';
 import { toRefs } from "vue";
 
+// 自己写的组件
+import VipContent from './components/VipContent.vue'
+
 export default {
   extends:DefaultTheme,
   Layout: MyLayout,
   enhanceApp({ app, router, siteData }) {
     app.component('Footer', Footer); // 注册全局组件
+    app.component('VipContent', VipContent); // 注册全局组件
     app.use(NolebaseGitChangelogPlugin)
   },
   setup(){

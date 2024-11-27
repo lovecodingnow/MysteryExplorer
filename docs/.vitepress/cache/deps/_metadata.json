@@ -1,46 +1,67 @@
 {
-  "hash": "88bc8ef2",
-  "configHash": "b729527f",
-  "lockfileHash": "9c27ac64",
-  "browserHash": "e8ada055",
+  "hash": "c1f5f0c2",
+  "configHash": "85b16e00",
+  "lockfileHash": "b6d71816",
+  "browserHash": "676dcfff",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "bcfda474",
+      "fileHash": "4e88c6ae",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "c9a53f7c",
+      "fileHash": "89f32940",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "e19ad13f",
+      "fileHash": "2829a4e2",
       "needsInterop": false
     },
-    "medium-zoom": {
-      "src": "../../../../node_modules/medium-zoom/dist/medium-zoom.esm.js",
-      "file": "medium-zoom.js",
-      "fileHash": "ad0b3a92",
+    "vitepress > @vueuse/integrations/useFocusTrap": {
+      "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
+      "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
+      "fileHash": "b590fa71",
+      "needsInterop": false
+    },
+    "vitepress > mark.js/src/vanilla.js": {
+      "src": "../../../../node_modules/mark.js/src/vanilla.js",
+      "file": "vitepress___mark__js_src_vanilla__js.js",
+      "fileHash": "e3eb98f4",
+      "needsInterop": false
+    },
+    "vitepress > minisearch": {
+      "src": "../../../../node_modules/minisearch/dist/es/index.js",
+      "file": "vitepress___minisearch.js",
+      "fileHash": "e84efeb1",
       "needsInterop": false
     },
     "vitepress-plugin-comment-with-giscus": {
       "src": "../../../../node_modules/vitepress-plugin-comment-with-giscus/lib/giscus.js",
       "file": "vitepress-plugin-comment-with-giscus.js",
-      "fileHash": "f329e03c",
+      "fileHash": "7588517a",
+      "needsInterop": false
+    },
+    "medium-zoom": {
+      "src": "../../../../node_modules/medium-zoom/dist/medium-zoom.esm.js",
+      "file": "medium-zoom.js",
+      "fileHash": "67d5ec3e",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-LW4I4DCF": {
-      "file": "chunk-LW4I4DCF.js"
-    },
     "giscus-aTimukGI-KUYRML7I": {
       "file": "giscus-aTimukGI-KUYRML7I.js"
+    },
+    "chunk-YJ6QP2VR": {
+      "file": "chunk-YJ6QP2VR.js"
+    },
+    "chunk-LW4I4DCF": {
+      "file": "chunk-LW4I4DCF.js"
     }
   }
 }

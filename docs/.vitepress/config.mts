@@ -3,13 +3,13 @@ import { La51Plugin } from 'vitepress-plugin-51la'
 import { oml2d } from 'vite-plugin-oh-my-live2d';
 import { AnnouncementPlugin } from 'vitepress-plugin-announcement'
 import lightbox from 'vitepress-plugin-lightbox'
-import { 
-  GitChangelog, 
-  GitChangelogMarkdownSection, 
+import {
+  GitChangelog,
+  GitChangelogMarkdownSection,
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
+import { withSidebar } from 'vitepress-sidebar';
 
-// https://vitepress.dev/reference/site-config
-export default defineConfig({
+const vitePressOptions = {
   vite: {
     //
     plugins: [
@@ -50,18 +50,20 @@ export default defineConfig({
         ],
         footer: [
           { type: 'text', content: '目前还在初步建设中' },
-          { type: 'button', content: '联系我', link: 'https://gitee.com/lovecodingnow',props:{
-            type: 'success'
-          } }
+          {
+            type: 'button', content: '联系我', link: 'https://gitee.com/lovecodingnow', props: {
+              type: 'success'
+            }
+          }
         ],
         reopen: true,
         duration: 3000
       }),
-      GitChangelog({ 
+      GitChangelog({
         // 填写在此处填写您的仓库链接
-        repoURL: () => 'https://gitee.com/lovecodingnow/MysteryExplorer', 
-      }), 
-      GitChangelogMarkdownSection(), 
+        repoURL: () => 'https://gitee.com/lovecodingnow/MysteryExplorer',
+      }),
+      GitChangelogMarkdownSection(),
     ]
   },
   lang: 'zh-CN',
@@ -97,16 +99,70 @@ export default defineConfig({
         timeStyle: 'medium'
       }
     },
-    returnToTopLabel: '返回顶部'
+    returnToTopLabel: '返回顶部',
+    search: {
+      provider: 'local',
+      options: {
+        locales: {
+          zh: {
+            translations: {
+              button: {
+                buttonText: '搜索文档',
+                buttonAriaLabel: '搜索文档'
+              },
+              modal: {
+                noResultsText: '无法找到相关结果',
+                resetButtonTitle: '清除查询条件',
+                footer: {
+                  selectText: '选择',
+                  navigateText: '切换'
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    sidebar: [
+      // VitePress Sidebar 的输出
+      {
+        text: 'Guide',
+        items: [
+          { text: 'Introduction', link: '/introduction' },
+          { text: 'Getting Started', link: '/getting-started' }
+        ]
+      }
+    ]
   },
   lastUpdated: true,
   rewrites: {
-    'packages/:pkg/src/pkg-index.md': ':pkg/index.md',// 重写规则
-    'packages/:pkg/src/:path/:file.md': ':pkg/:path/:file.md'
+    'packages/:pkg/index.md': ':pkg/index.md',// 重写规则
+    'packages/:pkg/:path/:file.md': ':pkg/:path/:file.md',
+    'packages/:pkg/:file.md': ':pkg/:file.md',
   },
-  markdown:{
-    config:(md)=>{
-      md.use(lightbox,{})
+  markdown: {
+    config: (md) => {
+      md.use(lightbox, {})
     }
   }
-})
+}
+
+const vitePressSidebarOptions = [
+  {
+    documentRootPath: 'docs/packages',
+    scanStartPath: 'pkg-vitepress',
+    basePath: '/pkg-vitepress/',
+    resolvePath: '/pkg-vitepress/',
+    useTitleFromFileHeading: true,
+  },
+  {
+    documentRootPath: 'docs/packages',
+    scanStartPath: 'pkg-vue',
+    basePath: '/pkg-vue/',
+    resolvePath: '/pkg-vue/',
+    useTitleFromFileHeading: true,
+  }
+]
+
+// https://vitepress.dev/reference/site-config
+export default defineConfig(withSidebar(vitePressOptions, vitePressSidebarOptions))

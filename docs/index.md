@@ -26,9 +26,9 @@ features:
     details: 从零开始的Vue学习之旅
     link: /pkg-vue/
   - icon: 📖
-    title: Nestjs学习
-    details: 从零开始的Nestjs学习之旅
-    link: /pkg-vue/
+    title: VitePress学习
+    details: 从零开始的VitePress学习之旅
+    link: /pkg-vitepress/
   - icon: 🎯
     title: 实践项目
     details: 从实践项目中学习，让你我一同成长！
