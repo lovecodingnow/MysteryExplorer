@@ -16,6 +16,7 @@ const { Layout } = DefaultTheme
 const router = useRouter();
 
 // Setup medium zoom with the desired options
+
 const setupMediumZoom = () => {
   mediumZoom("[data-zoomable]", {
     background: "transparent",
@@ -23,9 +24,11 @@ const setupMediumZoom = () => {
 };
 
 // Apply medium zoom on load
+
 onMounted(setupMediumZoom);
 
 // Subscribe to route changes to re-apply medium zoom effect
+
 router.onAfterRouteChanged = setupMediumZoom;
 </script>
 

@@ -394,6 +394,14 @@
     vitepress "^1.5.0"
     vue "^3.5.13"
 
+"@nolebase/vitepress-plugin-enhanced-mark@^2.10.0":
+  version "2.10.0"
+  resolved "https://registry.npmmirror.com/@nolebase/vitepress-plugin-enhanced-mark/-/vitepress-plugin-enhanced-mark-2.10.0.tgz#9c3c5e3d72e18c4de4160b07dd71520a124b719a"
+  integrity sha512-Al1bnUnNM6MtxVwHRc2t0IKqHJKuh6n8hoiY2jRZ6B4pBSnej41AxW9xYaakYt1V9heKinF83Wgb8XwX+DgZKA==
+  dependencies:
+    less "^4.2.0"
+    vitepress "^1.5.0"
+
 "@nolebase/vitepress-plugin-git-changelog@^2.10.0":
   version "2.10.0"
   resolved "https://registry.npmmirror.com/@nolebase/vitepress-plugin-git-changelog/-/vitepress-plugin-git-changelog-2.10.0.tgz#417086a229bc7ba180072ebe88b2fcc3a72c0f52"

@@ -46,7 +46,8 @@ const vitePressOptions = {
         body: [
           { type: 'text', content: '欢迎大家来访问我的博客！' },
           { type: 'image', src: '/logo.png', style: 'display: inline-block;width:46%;padding-right:6px' },
-          { type: 'image', src: '/logo.png', style: 'display: inline-block;width:46%;padding-right:6px' },
+          { type: 'text', content: '因本人考研，暂时更新速度会比较慢' },
+          { type: 'text', content: '如果带来不便，实在抱歉' },
         ],
         footer: [
           { type: 'text', content: '目前还在初步建设中' },
@@ -88,7 +89,6 @@ const vitePressOptions = {
     socialLinks: [
       { icon: 'gitee', link: 'https://gitee.com/lovecodingnow' },
       { icon: 'github', link: 'https://github.com/lovecodingnow' },
-      // { icon: 'eml' , link: 'mailto:lovecodingnow@163.com' },
       { icon: 'csdn', link: 'https://blog.csdn.net/2302_81562975?type=blog' }
     ],
 
@@ -160,6 +160,12 @@ const vitePressSidebarOptions = [
     scanStartPath: 'pkg-vue',
     basePath: '/pkg-vue/',
     resolvePath: '/pkg-vue/',
+    useTitleFromFileHeading: true,
+  },{
+    documentRootPath: 'docs/packages',
+    scanStartPath: 'pkg-python',
+    basePath: '/pkg-python/',
+    resolvePath: '/pkg-python/',
     useTitleFromFileHeading: true,
   }
 ]

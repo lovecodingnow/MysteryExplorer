@@ -3,7 +3,7 @@
 ---
 
 ## Vitepress插件
-<vip-content>
+
 ---
 
 ### [51la](https://www.npmjs.com/package/vitepress-plugin-51la) -- 网站数据统计
@@ -31,4 +31,7 @@ VitePress i18n 是 VitePress 的一个插件，可以轻松地在默认主题和
 ⚡️ 针对最新版本的 VitePress 进行了优化
 ⚡️ 轻量级 bundle 文件大小，零依赖
 ⚡️ TypeScript 支持
-</vip-content>
+
+### [@nolebase/vitepress-plugin-enhanced-mark](https://nolebase-integrations.ayaka.io/pages/zh-CN/integrations/vitepress-plugin-enhanced-mark/) -- <mark>mark元素增强</mark>
+
+<vip-content></vip-content>

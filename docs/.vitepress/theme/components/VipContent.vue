@@ -3,7 +3,8 @@
       <slot></slot>
     </div>
     <div v-else class="not-member">
-      <p>This content is for members only. Please log in to view.</p>
+      <p>正在"施工"中......</p>
+      <p>努力更新</p>
     </div>
   </template>
   

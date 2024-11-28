@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "学海探秘"
   text: "学习永无止境！"
-  tagline: 持续分享中！让你我一同成长！
+  tagline: 持续分享我的编程学习笔记，与你共同探索编程的奇妙世界！
   image:
     src: /logo.png
     alt: 学海探秘
@@ -21,6 +21,10 @@ hero:
       link: /guide/plan
 
 features:
+  - icon: 📚
+    title: python学习
+    details: 从零开始的python学习之旅
+    link: /pkg-python/
   - icon: 🛠️
     title: Vue学习
     details: 从零开始的Vue学习之旅
@@ -33,10 +37,8 @@ features:
     title: 实践项目
     details: 从实践项目中学习，让你我一同成长！
     link: /pkg-vue/
-  - icon: 📚
-    title: python学习
-    details: 从零开始的python学习之旅
-    link: /pkg-vue/
 ---
 
 # 欢迎来到我的gal时光日记
+
+内容正在持续更新中...
