@@ -14,6 +14,8 @@ import { toRefs } from "vue";
 
 // mark元素增强
 import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
+//
+import 'virtual:group-icons.css'
 
 // 自己写的组件
 import VipContent from './components/VipContent.vue'

@@ -8,11 +8,18 @@ import {
   GitChangelogMarkdownSection,
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
 import { withSidebar } from 'vitepress-sidebar';
+import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 
 const vitePressOptions = {
+  markdown: {
+    config(md) {
+      md.use(groupIconMdPlugin)
+    },
+  },
   vite: {
     //
     plugins: [
+      groupIconVitePlugin(),
       La51Plugin({
         id: '3KQxFliHZChBtUAa',
         ck: '3KQxFliHZChBtUAa'

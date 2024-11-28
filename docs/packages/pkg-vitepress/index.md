@@ -34,4 +34,7 @@ VitePress i18n 是 VitePress 的一个插件，可以轻松地在默认主题和
 
 ### [@nolebase/vitepress-plugin-enhanced-mark](https://nolebase-integrations.ayaka.io/pages/zh-CN/integrations/vitepress-plugin-enhanced-mark/) -- <mark>mark元素增强</mark>
 
+### [vitepress-plugin-group-icons](https://www.npmjs.com/package/vitepress-plugin-group-icons) -- 图标分组
+
+增强 VitePress 的代码块功能, 为代码块添加图标。
 <vip-content></vip-content>
